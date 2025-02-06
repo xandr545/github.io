@@ -6,5 +6,11 @@
   #search { 
     display: none;
 } 
-  
+  .img-wrapper {
+margin-left: 15px; 
+ width: 100px;  /* Ширина для каждой ячейки */
+  height: 100px; /* Высота для каждой ячейки */
+  position: relative;
+  perspective: 300px;
+}
 }
