@@ -13,4 +13,13 @@ margin-left: 15px;
   position: relative;
   perspective: 150px;
 }
+  .front-side-img, .back-side-img {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
 }
