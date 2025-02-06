@@ -1,10 +1,10 @@
 
 @media screen and (max-width: 800px) {
   .rightNav { 
-    display: block;
+    display: none;
 } 
   #search { 
-    display: block;
+    display: none;
 } 
   
 }
