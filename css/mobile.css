@@ -8,9 +8,9 @@
 } 
   .img-wrapper {
 margin-left: 15px; 
- width: 100px;  /* Ширина для каждой ячейки */
-  height: 100px; /* Высота для каждой ячейки */
+ width: 50px;  /* Ширина для каждой ячейки */
+  height: 50px; /* Высота для каждой ячейки */
   position: relative;
-  perspective: 300px;
+  perspective: 150px;
 }
 }
