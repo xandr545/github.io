@@ -22,4 +22,9 @@ margin-left: 15px;
   align-items: center;
   transition: 1s;
 }
+  .change-img {
+  display: flex; /* Используем flexbox для расположения ячеек в строку */
+     width: 50px;  /* Ширина для каждой ячейки */
+  height: 50px; /* Высота для каждой ячейки */
+}
 }
