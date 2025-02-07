@@ -45,7 +45,7 @@
 
     
         
-    .rotate-block {
+   .rotate-block {
     padding-top: 35px;
     padding-bottom: 35px;
     display: flex;
@@ -94,7 +94,7 @@
 }
 
 /* Стили для мобильных устройств */
-
+@media (max-width: 800px) {
     .img-wrapper {
         width: 200px; /* Уменьшаем ширину картинок для мобильных устройств */
         height: 200px; /* Уменьшаем высоту картинок для мобильных устройств */
@@ -103,8 +103,7 @@
     .change-img {
         gap: 10px; /* Уменьшаем отступ между картинками */
     }
-
-
+}
     .footer {
         height: auto;
         padding: 20px 0;
