@@ -1,90 +1,81 @@
 
 @media screen and (max-width: 800px) {
-  .rightNav { 
-    display: none;
-} 
-  #search { 
-    display: none;
-} 
-  
- .rotate-block {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        padding: 10px;
+    }
+
+    .rightNav {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #search {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .rotate-block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .change-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-wrapper {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .front-side-img img,
+    .back-side-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .h__social {
+        flex-direction: column;
+    }
+
+    .h__social li {
+        margin: 5px 0;
+    }
 }
 
-.change-img {
-  display: flex;
-}
 
-.img-wrapper {
-  margin-left: 15px;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  perspective: 1000px;
-}
+ 
 
-.front-side-img,
-.back-side-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
-}
 
-.change-img:hover .img-wrapper:hover .front-side-img {
-  transform: rotateY(180deg);
-}
 
-.change-img:hover .img-wrapper:hover .back-side-img {
-  transform: rotateY(360deg);
-}
-
-.back-side-img {
-  transform: rotateY(180deg);
-}
-
-.img-wrapper img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 767px) {
-  .rotate-block {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .change-img {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-wrapper {
-    width: 80%;
-    height: auto;
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-
-  .front-side-img img,
-  .back-side-img img {
-    width: 100%;
-    height: auto;
-  }
-
-  .change-img:hover .img-wrapper:hover .front-side-img {
-    transform: none;
-  }
-
-  .change-img:hover .img-wrapper:hover .back-side-img {
-    transform: none;
-  }
+ 
 
 }
