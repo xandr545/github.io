@@ -126,6 +126,17 @@
         gap: 5px; /* Уменьшаем отступ между картинками */
     
 }
+	.first {
+		display: none;
+		}
+		.second {
+	    
+		display: none;
+		}
+		.three {
+	
+		display: none;
+		}
 }
 
  
