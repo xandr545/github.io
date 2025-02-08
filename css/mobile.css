@@ -41,18 +41,7 @@
         margin-right: 10px;
     }
 
-    
-
-    
-        
-  
-  
-
-
-
-
-
-    .img-wrapper {
+       .img-wrapper {
         width: 50px; /* Уменьшаем ширину картинок для мобильных устройств */
         height: 50px; /* Уменьшаем высоту картинок для мобильных устройств */
     }
@@ -84,6 +73,54 @@
 	border: none;
 	box-shadow: 0 0 10px 1px black;
 }
+	.rotate-block {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-img {
+    display: flex;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку, если картинки не помещаются */
+    scroll-snap-type: x mandatory; /* Плавная прокрутка к картинкам */
+    width: 100%; /* Ширина контейнера */
+    gap: 15px; /* Отступ между картинками */
+    padding: 0 10px; /* Отступы по бокам */
+}
+
+.img-wrapper {
+    flex: 0 0 auto; /* Картинки не сжимаются и не растягиваются */
+    width: 250px; /* Ширина для каждой картинки */
+    height: 250px; /* Высота для каждой картинки */
+    position: relative;
+    perspective: 1000px;
+    scroll-snap-align: start; /* Плавная прокрутка к картинкам */
+}
+
+.front-side-img, .back-side-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.change-img:hover .img-wrapper:hover .front-side-img {
+    transform: rotateY(180deg);
+}
+
+.change-img:hover .img-wrapper:hover .back-side-img {
+    transform: rotateY(360deg);
+}
+
+.back-side-img {
+    transform: rotateY(180deg);
+}
+
 }
 
  
