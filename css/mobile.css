@@ -107,7 +107,7 @@
     transition: 1s;
 }
 
- .change-img:hover .img-wrapper:hover .front-side-img {
+.change-img:hover .img-wrapper:hover .front-side-img {
     transform: rotateY(180deg);
 }
 
@@ -119,16 +119,15 @@
     transform: rotateY(180deg);
 }
 
-
-
 /* Стили для мобильных устройств */
+@media (max-width: 800px) {
     .img-wrapper {
         max-width: 30%; /* Ширина картинок для мобильных устройств */
     }
 
     .change-img {
         gap: 5px; /* Уменьшаем отступ между картинками */
-    
+    }
 }
 	.first {
 		border: none;
