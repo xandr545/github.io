@@ -108,12 +108,16 @@
 }
 
  .change-img:hover .img-wrapper:hover .front-side-img {
-    transform: none;
-  }
+    transform: rotateY(180deg);
+}
 
-  .change-img:hover .img-wrapper:hover .back-side-img {
-    transform: none;
-  }
+.change-img:hover .img-wrapper:hover .back-side-img {
+    transform: rotateY(360deg);
+}
+
+.back-side-img {
+    transform: rotateY(180deg);
+}
 
 
 
