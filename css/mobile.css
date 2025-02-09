@@ -59,11 +59,12 @@
 }
 
 .img-wrapper {
-    flex: 1 1 30%; /* Указываем, что картинки должны занимать 30% ширины */
-    max-width: 30%;
-    height: auto;
+    flex: 0 0 auto; /* Картинки не сжимаются и не растягиваются */
+    width: 250px; /* Ширина для каждой картинки */
+    height: 250px; /* Высота для каждой картинки */
     position: relative;
     perspective: 1000px;
+    scroll-snap-align: start; /* Плавная прокрутка к картинкам */
 }
 
 .front-side-img, .back-side-img {
