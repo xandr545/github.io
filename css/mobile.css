@@ -42,62 +42,61 @@
     }
 
        .rotate-block {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.change-img {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 10px;
-    padding: 0 10px;
-    overflow-x: auto; /* Добавляем горизонтальный скролл */
-}
+    .change-img {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+        padding: 0 10px;
+        overflow-x: auto;
+    }
 
-.img-wrapper {
-    flex: 1; /* Картинки занимают равное пространство */
-    max-width: 30%; /* Максимальная ширина для каждой картинки */
-    height: auto; /* Высота подстраивается автоматически */
-    position: relative;
-    perspective: 1000px;
-}
-
-.front-side-img, .back-side-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-}
-
-.change-img:hover .img-wrapper:hover .front-side-img {
-    transform: rotateY(180deg);
-}
-
-.change-img:hover .img-wrapper:hover .back-side-img {
-    transform: rotateY(360deg);
-}
-
-.back-side-img {
-    transform: rotateY(180deg);
-}
-
-@media (max-width: 800px) {
     .img-wrapper {
-        flex: 1 1 30%; /* Убедимся, что картинки занимают 30% ширины */
+        flex: 1;
+        max-width: 30%;
+        height: auto;
+        position: relative;
+        perspective: 1000px;
+    }
+
+    .front-side-img, .back-side-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .change-img:hover .img-wrapper:hover .front-side-img {
+        transform: rotateY(180deg);
+    }
+
+    .change-img:hover .img-wrapper:hover .back-side-img {
+        transform: rotateY(360deg);
+    }
+
+    .back-side-img {
+        transform: rotateY(180deg);
+    }
+
+    .img-wrapper {
+        flex: 1 1 30%;
         max-width: 30%;
     }
 
     .change-img {
         gap: 5px;
     }
-}
+
 	.first {
 		border: none;
 		}
