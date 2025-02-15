@@ -41,14 +41,7 @@
         margin-right: 10px;
     }
 
-       .img-wrapper {
-        flex: 1 1 30%; /* Убедимся, что картинки занимают 30% ширины */
-        max-width: 30%;
-    }
-
-    .change-img {
-        gap: 5px;
-    }
+       
 	
 	.first {
 		border: none;
