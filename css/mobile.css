@@ -49,13 +49,7 @@
     .change-img {
         gap: 5px;
     }
-	.change-img:hover .img-wrapper:hover .front-side-img {
-    transform: none;
-  }
-
-  .change-img:hover .img-wrapper:hover .back-side-img {
-    transform: none;
-  }
+	
 	.first {
 		border: none;
 		}
