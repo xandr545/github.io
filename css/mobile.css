@@ -40,6 +40,19 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+	.img-wrapper {
+        width: 200px; /* Уменьшаем ширину картинок для мобильных устройств */
+        height: 200px; /* Уменьшаем высоту картинок для мобильных устройств */
+    }
+
+    .change-img {
+        gap: 10px; /* Уменьшаем отступ между картинками */
+    }
+
+    .change-img:hover .img-wrapper:hover .front-side-img,
+    .change-img:hover .img-wrapper:hover .back-side-img {
+        transform: none; /* Отключаем анимацию переворота на мобильных устройствах */
+    }
 
        
 	
